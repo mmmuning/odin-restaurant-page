@@ -1,0 +1,26 @@
+:root {
+    --color-primary: #f4e5c2;
+    --color-secondary: #3b7a57;
+    --color-text: #fffbf0;
+    --color-bg: #1e1e1e;
+    --color-card: #2a2a2a;
+}
+
+body, 
+html
+{
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 62.5%;
+    background-color: var(--color-bg);
+    margin: 0;
+}
+
+header nav {
+    display: flex;
+}
+
+header
+
+header nav ul {
+    display: flex;
+}
