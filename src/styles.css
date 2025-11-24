@@ -4,6 +4,7 @@
     --color-text: #fffbf0;
     --color-bg: #1e1e1e;
     --color-card: #2a2a2a;
+    --color-btn-active: #444444;
 }
 
 body, 
@@ -12,15 +13,126 @@ html
     font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 62.5%;
     background-color: var(--color-bg);
+    min-height: 100vh;
     margin: 0;
 }
 
-header nav {
-    display: flex;
+#content {
+  height: 100%;
 }
 
-header
-
-header nav ul {
+header {
+    position: fixed;
     display: flex;
+    gap: 2rem;
+    align-items: center;
+    background-color: var(--color-card);
+    border-radius: 0.8rem;
+    margin: 2rem;
+    padding: 0.8rem 1rem;
+}
+
+#logo {
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+#logo > p {
+    margin: 0;
+    line-height: 1;
+}
+
+#logo > p:first-child {
+   font-size: 1.8rem;
+}
+
+#logo > p:last-child {
+   font-size: 1.6rem;
+}
+
+nav {
+    display: flex;
+    gap: 1rem;
+}
+
+nav > button {
+    font-size: 1.2rem;
+    color: var(--color-primary);
+    background: none;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.8rem 1rem;
+    cursor: pointer;
+}
+
+nav > button.active {
+    background-color: var(--color-btn-active);
+}
+
+.home-container {
+    display: flex;
+    height: calc(100vh - 2rem);
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-image: url(assets/home-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 0.8rem;
+    margin: 1rem;
+    height: 100%;
+    flex: 4;
+}
+
+.hero-section h1, 
+.hero-section p {
+    color: var(--color-primary);
+    margin: 0;
+    padding-left: 2rem;
+}
+
+.hero-section h1:first-child {
+    font-size: 5rem;
+    line-height: 0.8; 
+}
+
+.hero-section h1:nth-child(2) {
+    font-size: 5.9rem;
+    line-height: 0.8; 
+}
+
+.hero-section p {
+    font-size: 1.4rem;
+    font-style: italic;
+    padding-top: 0.6rem;
+    padding-bottom: 1rem;
+}
+
+.right-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.right-section {
+    font-size: 1.2rem;
+    text-align: justify;
+    color: var(--color-text);
+    background-color: var(--color-card);
+    border-radius: 0.8rem;
+    padding: 1rem;
+    margin: 1rem 1rem 0 0;
+    flex: 1;
+}
+
+.right-section > h2 {
+    margin: 1rem;
+}
+
+.right-section > p {
+    margin: 1rem;
 }
