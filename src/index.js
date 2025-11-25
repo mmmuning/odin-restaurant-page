@@ -4,22 +4,26 @@ import menu from "./menu.js";
 import contact from "./contact.js";
 
 (() => {
-  const navButtons = document.querySelectorAll(".nav-btn");
+  const nav = document.querySelector("nav");
   const divContent = document.querySelector("#content");
 
-  const tabs = [home, menu, contact];
+  const tabs = {
+    home: home(),
+    menu: menu(),
+    contact: contact(),
+  };
 
-  let currentTab = tabs[0]();
+  let currentTab = tabs.home;
   divContent.appendChild(currentTab);
 
-  navButtons.forEach((button, index) => {
-    button.addEventListener("click", () => {
-      if (currentTab) divContent.removeChild(currentTab);
+  nav.addEventListener("click", (e) => {
+    let activeNav = nav.querySelector(".active");
 
-      //button.classList.add("active");
+    if (activeNav) activeNav.classList.remove("active");
+    if (currentTab) divContent.removeChild(currentTab);
 
-      currentTab = tabs[index]();
-      divContent.appendChild(currentTab);
-    });
+    e.target.classList.add("active");
+    currentTab = tabs[e.target.dataset.tabName];
+    divContent.appendChild(currentTab);
   });
 })();
