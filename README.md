@@ -22,3 +22,10 @@ This project is part of **The Odin Project** (JavaScript / Webpack path). It’s
 - **Single-page Navigation**: Tab switching logic to swap out the content of the app without full page reloads
 - **Styling & Layout**: Using HTML5, CSS (flex, grid, or custom styles) in conjunction with JS-generated markup
 - **Asset Management**: Handling images, CSS, and JS in a modular / bundled project
+
+---
+
+## Image Attributions
+
+All images used in this project are free resources from **Canva**.  
+Photos by **Thao Nhu** from **Studio Philippines** on [Canva](https://www.canva.com/p/studiophilippines/)
