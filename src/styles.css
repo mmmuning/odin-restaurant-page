@@ -30,6 +30,8 @@ header {
     border-radius: 0.8rem;
     margin: 2rem;
     padding: 0.8rem 1rem;
+    z-index: 1;
+    box-shadow: 0 0 5px var(--color-bg);
 }
 
 #logo {
@@ -56,7 +58,7 @@ nav {
 }
 
 nav > button {
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: var(--color-primary);
     background: none;
     border: none;
@@ -136,4 +138,82 @@ nav > button.active {
 
 .right-section > p {
     margin: 1rem;
+}
+
+.menu-container {
+    padding: 12rem 2em 2rem 2rem;
+}
+
+.menu-list > div:first-child {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.menu-list > div > h1 {
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: var(--color-primary)
+}
+
+.menu-list > div > hr {
+    flex-grow: 1;
+    height: 2px;
+    border: none;
+    background-color: var(--color-primary)
+}
+
+.menu-list > div:nth-child(2) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.menu-card {
+    display: grid;
+    background-color: var(--color-card);
+    border-radius: 0.8rem;
+}
+
+.menu-img {
+    position: relative;
+    height: 30rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 0.8rem 0.8rem 0 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 0 1rem;
+}
+
+.menu-img p {
+    position: absolute;
+    font-size: 2.4rem;
+    color: var(--color-text);
+    background-color: var(--color-secondary);
+    padding: 1rem 2rem;
+    border-radius: 0.8rem;
+    bottom: -4rem;
+}
+
+.menu-details {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 2rem;
+}
+
+.menu-details > h2 {
+    font-size: 2.2rem;
+    color: var(--color-text);
+    margin: 0;
+}
+
+.menu-details > p {
+    font-size: 1.8rem;
+    color: var(--color-text);
+    padding-top: 1rem;
+    margin: 0;
 }
