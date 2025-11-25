@@ -1,6 +1,6 @@
 # Odin Restaurant Page
 
-This project is part of **The Odin Project** (JavaScript / Webpack path). It’s a simple, dynamic restaurant website built entirely with JavaScript and DOM manipulation, following the project specification from the Odin curriculum.
+This project is part of The Odin Project’s JavaScript Course. It’s a simple, dynamic restaurant website built entirely with JavaScript and DOM manipulation, following the project specification from the Odin curriculum.
 
 ---
 
