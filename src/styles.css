@@ -217,3 +217,129 @@ nav > button.active {
     padding-top: 1rem;
     margin: 0;
 }
+
+.contact-container {
+    box-sizing: border-box;
+    background-image: url(assets/contact-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+    height: 100vh;
+    padding: 12rem 2em 2rem 2rem;
+}
+
+.contact-container::before {
+  content: "";
+  position: absolute;
+  inset: 0; 
+  background-color: var(--color-bg); 
+  opacity: 0.8;
+  z-index: 0;
+}
+
+.contact-container > * {
+  position: relative;
+  z-index: 1;
+}
+
+.contact-container > div:first-child {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.contact-container > div:last-child {
+    flex: 1;
+}
+
+.contact-container > div:first-child > p {
+    font-size: 2rem;
+    color: var(--color-text);
+}
+
+.contact-div > h1 {
+    font-size: 6rem;
+    color: var(--color-text);
+    margin: 0;
+    line-height: 0.8;
+}
+
+.contact-div > p {
+    font-size: 2rem;
+    color: var(--color-text);
+    margin: 0;
+    padding: 0.8rem 0 0.8rem 0;
+}
+
+.contact-form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+}
+
+.contact-header h2 {
+    font-size: 3rem;
+    color: var(--color-text);
+    line-height: 1.5;
+    margin: 0;
+}
+
+.contact-header p {
+    font-size: 2rem;
+    color: var(--color-text);
+    margin: 0;
+    padding-bottom: 2rem;
+    color: var(--color-text);
+}
+
+label {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: block;
+    color: var(--color-text);
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    font-size: 1.6rem;
+    width: 100%;
+    padding: 1.8rem;
+    border-radius: 6px;
+    box-sizing: border-box;
+    background-color: var(--color-card);
+    border: none;
+    color: var(--color-text);
+}
+
+textarea {
+    resize: vertical;
+}
+
+.contact-form-container > label,
+.contact-form-container > input,
+.contact-form-container > textarea {
+    margin-bottom: 1rem;
+}
+
+button[type="submit"] {
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--color-text);
+    background-color: var(--color-secondary);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 40%;
+}
